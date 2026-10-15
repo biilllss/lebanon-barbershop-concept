@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Hot towel and straight razor shave">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#g1)"/>
+  <g transform="translate(300 320)" opacity="0.9">
+    <!-- Towel -->
+    <ellipse cx="0" cy="0" rx="100" ry="35" fill="#F2EDE4" opacity="0.9"/>
+    <path d="M-100 0 Q-50 -20 0 0 Q50 -20 100 0 L100 10 Q50 30 0 30 Q-50 30 -100 10z" fill="#F2EDE4" opacity="0.7"/>
+    <!-- Razor -->
+    <g transform="translate(0 40)" stroke="#C9A24B" stroke-width="3" fill="none">
+      <path d="M-60 0 L60 0 L40 30 L-40 30z"/>
+      <path d="M-60 0 L-70 -10 M60 0 L70 -10"/>
+      <circle cx="0" cy="15" r="5" fill="#C9A24B"/>
+      <path d="M0 30 L0 60"/>
+    </g>
+    <!-- Cedar wood base -->
+    <rect x="-120" y="80" width="240" height="80" rx="8" fill="#8B4513" opacity="0.6"/>
+    <line x1="-120" y1="100" x2="120" y2="100" stroke="#8B4513" stroke-width="1" opacity="0.8"/>
+    <line x1="-120" y1="125" x2="120" y2="125" stroke="#8B4513" stroke-width="1" opacity="0.8"/>
+  </g>
+</svg>

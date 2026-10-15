@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { useLanguage } from "./LanguageProvider";
 import { LanguageToggle } from "./LanguageToggle";
 import { Button } from "./ui/button";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import { getTranslations } from "@/lib/translations";
+import { SITE_CONFIG } from "@/lib/config";
 
 export function Header() {
   const { lang, toggleLang } = useLanguage();
@@ -29,13 +31,16 @@ export function Header() {
     <>
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-background">
         <div className="container mx-auto flex h-16 items-center justify-between px-6 lg:px-8">
-          {/* Logo — always Playfair Display regardless of language */}
-          <Link
-            href="#"
-            className="font-brand text-xl font-semibold text-text"
-            aria-label="Blade & Cedar — home"
-          >
-            Blade &amp; Cedar
+          {/* Logo — SVG asset, always Playfair Display regardless of language */}
+          <Link href="#" aria-label="Blade & Cedar — home">
+            <Image
+              src={SITE_CONFIG.logo}
+              alt="Blade & Cedar"
+              width={160}
+              height={63}
+              className="h-10 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}

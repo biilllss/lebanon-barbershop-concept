@@ -56,6 +56,11 @@ export const metadata: Metadata = {
     description: SITE_CONFIG.metadata.description,
     images: [SITE_CONFIG.metadata.ogImage],
   },
+  metadataBase: new URL(SITE_CONFIG.metadata.url),
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   robots: { index: true, follow: true },
   alternates: {
     canonical: SITE_CONFIG.metadata.url,

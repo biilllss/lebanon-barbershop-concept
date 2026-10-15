@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Master Barber Samir">
+  <defs>
+    <linearGradient id="b0" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#b0)"/>
+  <g transform="translate(300 220)" opacity="0.9">
+    <!-- Face silhouette -->
+    <circle cx="0" cy="0" r="110" fill="#8B4513" opacity="0.5"/>
+    <!-- Hair -->
+    <path d="M-95 10 C-90 -20 -60 -50 0 -40 C60 -50 90 -20 95 10 L80 20 C70 -10 40 -30 0 -25 C-40 -30 -70 -10 -80 20z" fill="#121212"/>
+    <!-- Beard -->
+    <path d="M-70 40 Q0 90 70 40 Q60 50 0 45 Q-60 50 -70 40z" fill="#121212"/>
+    <!-- Scissors accent -->
+    <g stroke="#C9A24B" stroke-width="4" fill="none" stroke-linecap="round">
+      <path d="M-130 -30 L-90 -60 M-130 -30 L-90 0"/>
+      <circle cx="-110" cy="-30" r="5" fill="#F2EDE4"/>
+      <path d="M-90 -60 L-70 -80 M-90 0 L-70 20"/>
+      <circle cx="-80" cy="-30" r="5" fill="#F2EDE4"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Blade & Cedar favicon">
+  <defs>
+    <linearGradient id="faviconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A6852A"/>
+      <stop offset="100%" stop-color="#C9A24B"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="8" fill="#121212" stroke="url(#faviconGrad)" stroke-width="4"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Scissors blades -->
+    <path d="M30 20 L38 14 M30 20 L38 26" stroke="url(#faviconGrad)" stroke-width="2.5"/>
+    <path d="M30 20 L38 14 M30 20 L38 26" stroke="url(#faviconGrad)" stroke-width="2.5"/>
+    <circle cx="34" cy="20" r="3" fill="#121212" stroke="url(#faviconGrad)" stroke-width="1"/>
+    <path d="M38 14 L42 10" stroke="url(#faviconGrad)" stroke-width="1.5"/>
+    <path d="M38 26 L42 30" stroke="url(#faviconGrad)" stroke-width="1.5"/>
+    <!-- Cedar branch -->
+    <path d="M26 20 Q30 17 34 20" fill="none" stroke="#8B4513" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="30" cy="17" r="1.5" fill="#8B4513"/>
+    <circle cx="32" cy="22" r="1.5" fill="#8B4513"/>
+  </g>
+</svg>
