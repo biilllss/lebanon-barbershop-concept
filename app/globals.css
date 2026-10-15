@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design-token CSS variables (mirrors Tailwind config) ───── */
+:root {
+  --color-background: #121212;
+  --color-surface: #1a1a1a;
+  --color-text: #f2ede4;
+  --color-text-dim: #a6a094;
+  --color-accent: #c9a24b;
+  --color-accent-hover: #b8994d;
+}
+
+/* Layout & typography */
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-background text-text antialiased;
+  font-family: var(--font-inter);
+}
+
+/* Headings — Playfair Display in LTR, Cairo in RTL */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair-display);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6 {
+  font-family: var(--font-cairo);
+}
+
+/* Body text in RTL uses Cairo */
+html[dir="rtl"] body {
+  font-family: var(--font-cairo);
+}
+
+/* Brand name always uses Playfair (proper noun) */
+.font-brand {
+  font-family: var(--font-playfair-display) !important;
+}
+
+/* Scroll offset for fixed-header anchor links */
+section {
+  @apply scroll-mt-20;
+}
+
+/* Section spacing */
+section {
+  @apply py-24 md:py-32;
+}
+
+.section-container {
+  @apply mx-auto max-w-7xl px-6 lg:px-8;
+}
+
+/* Gold accent underline for section titles */
+.underline-accent {
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+.underline-accent::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  inset-inline-start: 0;
+  width: 48px;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(201, 162, 75, 0.3);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(201, 162, 75, 0.5);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .transition-all,
+  .transition-transform,
+  .transition-opacity {
+    transition: none !important;
+  }
+  .motion-safe\:animate-none {
+    animation: none !important;
+  }
+}
